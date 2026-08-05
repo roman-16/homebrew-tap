@@ -4,22 +4,22 @@ cask "proton-cli" do
 
   on_macos do
     on_intel do
-      sha256 "ff094640c1f5c513f3b923f97696999c922cda9e12998ea5d4816c12da02a99b"
+      sha256 "f574fa92d5854a1ceed929fa83f80fe15b1d138068071dfaf4becafca65f8542"
       url "https://github.com/roman-16/proton-cli/releases/download/v#{version}/proton-cli_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "a379706e78d5bb97ce4c96a375206fe3573159a4d5f6573da589fec6bf4a95a6"
+      sha256 "f0570024bafd5fd7d8cfce14eb470fdfc0363289379ad442b6133542a11b31df"
       url "https://github.com/roman-16/proton-cli/releases/download/v#{version}/proton-cli_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "e762af845852277f07a9cca40f98ff0a705f8ab45a4fe45e3d16a04f6ba3b16f"
+      sha256 "e41a62bc9db31fbdb54ad3ce98cfe789660196feadcdeb26b5e7467a5bdaa934"
       url "https://github.com/roman-16/proton-cli/releases/download/v#{version}/proton-cli_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "4d5bca383a5c630c0725dccf8f94db10ca5ac0be18f91b1359ba666fa8911b80"
+      sha256 "0eb62b44bcc863f13aa8aa5f40ca1e2cbe6def5156e2bfc9ff58be702d34545a"
       url "https://github.com/roman-16/proton-cli/releases/download/v#{version}/proton-cli_#{version}_linux_arm64.tar.gz"
     end
   end
