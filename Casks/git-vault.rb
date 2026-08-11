@@ -4,22 +4,22 @@ cask "git-vault" do
 
   on_macos do
     on_intel do
-      sha256 "82ba3823bf8ec667a4bf4645686789a6112be5687d896f43b4264686905af5ed"
+      sha256 "ffd9bfa9df3533a2ad065528a6669223f3859fade43a09d7d9e22683f644b44d"
       url "https://github.com/roman-16/git-vault/releases/download/v#{version}/git-vault_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "8b7d366456df4494e2f132c6be916c9374b96acb8062d11050e325799f0fbfe4"
+      sha256 "9748b619148c297572d08908a1a02de8d428f14a1b021b8ccd0808b5753bb1e1"
       url "https://github.com/roman-16/git-vault/releases/download/v#{version}/git-vault_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "2535668e6cff2942b7fdfc3c891f5da232804e1bc9f35a710165490e6b2fb7d2"
+      sha256 "b9d48c4b276f71338efaa1c1c6916d6f39195733a43fd91e4c496043e3b1a383"
       url "https://github.com/roman-16/git-vault/releases/download/v#{version}/git-vault_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "a3f94f3c96a898858a7cf597971ef0bf8ebec3d8496b32b96c330191d78a3eb5"
+      sha256 "f43feb0fffbd6cdef97548d3c3e823edcb5b298e20739f46ff737b5826d11bd2"
       url "https://github.com/roman-16/git-vault/releases/download/v#{version}/git-vault_#{version}_linux_arm64.tar.gz"
     end
   end
