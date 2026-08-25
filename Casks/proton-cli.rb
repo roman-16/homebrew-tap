@@ -3,27 +3,26 @@ cask "proton-cli" do
   binary "proton", target: "proton-cli"
   fish_completion "completions/proton-cli.fish"
 
-  version "2.5.0"
+  version "2.6.0"
 
   on_macos do
-    on_intel do
-      sha256 "89237530a26e66dc04d2fe4b6e4c5733b0104a52f8375e8e3748c4e185f4c6be"
-      url "https://github.com/roman-16/proton-cli/releases/download/v#{version}/proton-cli_#{version}_darwin_amd64.tar.gz"
-    end
     on_arm do
-      sha256 "51fa662a4a102be34fad36e306b5faa5c629754506819e70ff001e7e7cd14bd9"
+      sha256 "3f708cf664bbcde8f11b7b2554496eb650879e7bcdfd81c4e12cf400124ea4a5"
       url "https://github.com/roman-16/proton-cli/releases/download/v#{version}/proton-cli_#{version}_darwin_arm64.tar.gz"
     end
-  end
-
-  on_linux do
     on_intel do
-      sha256 "e4ea02ba7d7518b911196fa1b2084d6a0f20e3f65ca47fdcfa429dd1577efe3e"
-      url "https://github.com/roman-16/proton-cli/releases/download/v#{version}/proton-cli_#{version}_linux_amd64.tar.gz"
+      sha256 "5e52c0275269cbf9e89255d8b4c78c06ec9554ec5f18ee723b9cca18e9b91ae1"
+      url "https://github.com/roman-16/proton-cli/releases/download/v#{version}/proton-cli_#{version}_darwin_amd64.tar.gz"
     end
+  end
+  on_linux do
     on_arm do
-      sha256 "399570cb572d53ffbccae04cb32b1e47e6e4f3f67c74d25f479322bf98e94c87"
+      sha256 "455ecf99c1f729591bb95937ac7b170e52199e0edcb8ad13fc184f3f91205421"
       url "https://github.com/roman-16/proton-cli/releases/download/v#{version}/proton-cli_#{version}_linux_arm64.tar.gz"
+    end
+    on_intel do
+      sha256 "3a5278e31d94632da4956ec629bcbb870262ab33ff443a2d4978cccd8b3608e4"
+      url "https://github.com/roman-16/proton-cli/releases/download/v#{version}/proton-cli_#{version}_linux_amd64.tar.gz"
     end
   end
 
@@ -41,5 +40,4 @@ cask "proton-cli" do
   zsh_completion "completions/proton.zsh"
 
   # No zap stanza required
-
 end
