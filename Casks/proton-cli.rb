@@ -3,31 +3,31 @@ cask "proton-cli" do
   binary "proton", target: "proton-cli"
   fish_completion "completions/proton-cli.fish"
 
-  version "5.1.0"
+  version "5.2.0"
 
   on_macos do
     on_arm do
-      sha256 "8ba9ed93b3e9aa91310883940cc49b0d225fc27487a67b142d3a6dbede191e25"
+      sha256 "e6695a7f735d7e18030d8376a03597e18dd72140e5dd58c280a848a5d4734009"
       url "https://github.com/roman-16/proton-cli/releases/download/v#{version}/proton-cli_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "0a26ff4f4e5590e6c984f8c6c752c3fec1ed227dcc84cd6df297991e5e1421c1"
+      sha256 "3a8ce1d4522a46881e734eb8d5657db042b0019a6adac2066c69e019f5707e72"
       url "https://github.com/roman-16/proton-cli/releases/download/v#{version}/proton-cli_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "a04d615ba05b6cdf756e68c1cc8fd42b9db7c7812222a51b2cda85f8189dbec3"
+      sha256 "41e4fac7255a110e62c058b25bfbee82a2d2418cead8982928c6c51898938c51"
       url "https://github.com/roman-16/proton-cli/releases/download/v#{version}/proton-cli_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "0878fe9c81cf8f51e4da13f0f4e61ee49ff3ead14936a8d89ea602b79602dbec"
+      sha256 "bc5a1d2f0966462b47dcd43cf5483d6e900f69ada06edf795f2f61b41cbce1c9"
       url "https://github.com/roman-16/proton-cli/releases/download/v#{version}/proton-cli_#{version}_linux_amd64.tar.gz"
     end
   end
 
   name "proton-cli"
-  desc "Unofficial, end-to-end encrypted CLI for Proton Mail, Drive, Calendar, Pass and Contacts."
+  desc "Unofficial, end-to-end encrypted CLI for Proton Mail, Drive, Calendar, Pass, Meet and Contacts."
   homepage "https://github.com/roman-16/proton-cli"
 
   livecheck do
@@ -36,8 +36,8 @@ cask "proton-cli" do
 
   binary "proton"
   bash_completion "completions/proton.bash"
-  fish_completion "completions/proton.fish"
   zsh_completion "completions/proton.zsh"
+  fish_completion "completions/proton.fish"
 
   # No zap stanza required
 end
